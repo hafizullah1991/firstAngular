@@ -1,0 +1,18 @@
+<div>
+  <button (click)="onSelectUser()"
+
+  >
+    <img
+      [src]="'assets/users/' + selectedUser.avatar"
+      [alt]="selectedUser.name"
+    />
+    <span>{{ selectedUser.name }}</span>
+  </button>
+</div>
+<p id="p">this is the deatils of the information about ths picture</p>
+
+<button id="btn" (click)="onClickButton()" 
+>{{showDetails ? 'Hide Details' : 'Show Details'}}</button>
+
+
+
